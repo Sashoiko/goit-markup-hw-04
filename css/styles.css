@@ -202,11 +202,16 @@ body {
 /* Герой */
 
 .hero {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         background-color: var(--color-body);
         padding: 188px 0;
 }
 
-.hero-container {}
+.hero-container {
+}
 
 .hero-title {
         max-width: 496px;
@@ -354,6 +359,28 @@ body {
 
 
 /* /Команда */
+
+/*  */
+
+.customers {
+        padding: 130px 0 120px;
+}
+
+.container {}
+
+.customers-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.customers-list {}
+
+.customers-item {}
+
+/* / */
 
 /* Кнопки */
 
