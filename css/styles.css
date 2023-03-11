@@ -31,6 +31,7 @@ body {
         --color-background-team-btn: #F4F4FD;
         --color-link-and-btn: #4D5AE5;
         --main-indent: 120px 0;
+        --icon-background: #4D5AE5;
 
 }
 
@@ -249,11 +250,33 @@ body {
 
 /* /Герой */
 
+
 /* Категорії */
 
 .categoris {}
 
 .categoris-title {}
+
+.categoris-pictures-list{
+       display: flex;
+       align-content: center;
+       justify-content: center; 
+       gap: 24px;
+       margin-bottom: 8px;
+
+}
+
+.categoris-pictures-item{
+        width: 100%;
+        height: 100%;
+        background: #F4F4FD;
+        border-radius: 4px;
+}
+
+
+.categoris-pictures-icon{
+        margin: 24px 102px;
+}
 
 .categoris-list {
         display: flex;
@@ -336,8 +359,45 @@ body {
         border-radius: 0px 0px 4px 4px;
 }
 
+.team-social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 32px;
+}
+
+
+.team-social-item {
+        width: 40px;
+        height: 40px;
+}
+
+.team-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: #F4F4FD;
+        background-color: var(--icon-background);
+}
+
+.team-social-link:hover{
+       background-color: #404BBF;
+}
+
+.team-social-icon {
+        fill:currentColor;
+}
+
+.team-social-icon:hover{
+}
+
 .team-container {
         padding: 32px 16px;
+        padding-bottom: 0;
+
 }
 
 
@@ -355,6 +415,7 @@ body {
 .team-text {
         text-align: center;
         color: var(--text-color);
+        margin-bottom: 8px;
 }
 
 
@@ -366,7 +427,6 @@ body {
         padding: 130px 0 120px;
 }
 
-.container {}
 
 .customers-title {
         font-size: 36px;
@@ -374,11 +434,47 @@ body {
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 
-.customers-list {}
+.customers-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
 
-.customers-item {}
+}
+
+.customers-item {
+}
+
+.customers-link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8E8F99;
+        border-radius: 4px;
+        border: 1px solid #8E8F99;
+}
+
+.customers-link:is(:hover, :focus){
+        color: #404BBF;
+        border-color: #404BBF;
+}
+        
+.customers-icons{
+        width: 104px;
+        height: 56px;
+        margin: 16px 32px;
+        fill: currentColor;
+}
+
+.customers-icons:is(:hover, :focus){
+        fill: currentColor;
+}
+
 
 /* / */
 
@@ -429,7 +525,10 @@ body {
 
 .application-item {
         flex-basis: calc((100% - 48px) / 3);
+}
 
+.application-item:hover{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .application-blok {
@@ -450,9 +549,14 @@ body {
 /* Футер */
 
 
+
 .footer {
         background: var(--color-body);
         padding: 100px 0;
+
+}
+.footer-div{
+        display: flex;
 }
 
 .footer-container {
@@ -472,6 +576,51 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--color-border-btn-footlogo);
+}
+
+.footer-social {
+        margin-left: 120px;
+
+}
+
+.footer-social-title {
+        color: var(--color-hero-and-background);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.footer-social-list {
+        display: flex;
+        gap: 24px;
+}
+
+.footer-social-item {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+}
+
+.footer-social-item:is(:hover, :focus){
+        background: #31D0AA;
+}
+
+
+.footer-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #F4F4FD;
+        
+}
+
+.footer-social-icon {
+        fill: currentColor;
 }
 
 /* /Футер */
